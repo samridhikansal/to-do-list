@@ -1,13 +1,12 @@
-import React from "react";
-import List from "./List";
-import Listitem from "./listItem";
+import React, { useState } from "react";
+import Card from "./Card";
 
 function App() {
+  const mainheading = "Welcome to React Learning";
+  const subheading = " Start Smart ...Start Small";
   return (
     <div>
-      <h1>To-Do-List</h1>
-      <Listitem />
-      <List />
+      <Card mainheading={mainheading} subheading={subheading} />
     </div>
   );
 }
